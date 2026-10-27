@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAULPLAY112 | Links</title>
+  <meta name="description" content="Todas las redes de SAULPLAY112: YouTube, Twitch, Kick, TikTok y la comunidad Funky Punky." />
+
+  <!-- Vista previa al compartir el link (WhatsApp, Discord, X...) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SAULPLAY112" />
+  <meta property="og:description" content="Streams, videos y la comunidad Funky Punky. ¡Únete!" />
+  <meta property="og:image" content="https://saulplay112.quttadev.com/img/og.jpg" />
+  <meta property="og:url" content="https://saulplay112.quttadev.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0a0704" />
+  <link rel="icon" href="img/avatar.jpg" />
+  <link rel="apple-touch-icon" href="img/avatar.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ===========================================================
+       🎨 COLORES (sacados de tus logos)
+       =========================================================== */
+    :root {
+      /* Tu marca personal: negro cálido + dorado/ámbar del banner */
+      --oro:      #f5b041;
+      --naranja:  #f08a24;
+      --bg:       #0a0704;
+
+      /* Tu comunidad: morado de FPMC y magenta de Taro */
+      --morado:   #b44ae8;
+      --magenta:  #fb01ff;
+
+      --card:       rgba(255, 220, 160, 0.05);
+      --card-hover: rgba(255, 220, 160, 0.10);
+      --border:     rgba(245, 176, 65, 0.16);
+      --text:       #fff8ee;
+      --muted:      #c4b49c;
+      --radius:     18px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse 70% 45% at 50% 0%, rgba(240, 138, 36, 0.28), transparent 70%),
+        var(--bg);
+      color: var(--text);
+      font-family: "Outfit", system-ui, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 56px 16px 32px;
+      overflow-x: hidden;
+    }
+
+    /* Patrón de hexágonos como el de tu banner */
+    .hex-bg {
+      position: fixed; inset: 0; z-index: -1;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100' viewBox='0 0 56 100'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66zm0 34V66' fill='none' stroke='%23f5b041' stroke-opacity='0.08' stroke-width='1'/%3E%3C/svg%3E");
+      mask-image: radial-gradient(ellipse at 50% 20%, black 20%, transparent 75%);
+      -webkit-mask-image: radial-gradient(ellipse at 50% 20%, black 20%, transparent 75%);
+    }
+
+    /* Destellos dorados flotando (como la estrellita del banner) */
+    .chispa {
+      position: fixed; z-index: -1;
+      width: 6px; height: 6px;
+      background: var(--oro);
+      clip-path: polygon(50% 0, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0 50%, 38% 38%);
+      opacity: 0;
+      animation: brillar 4s ease-in-out infinite;
+    }
+    .chispa:nth-of-type(2) { top: 14%; left: 12%; animation-delay: 0s; }
+    .chispa:nth-of-type(3) { top: 30%; right: 10%; animation-delay: 1.3s; width: 9px; height: 9px; }
+    .chispa:nth-of-type(4) { top: 62%; left: 7%;  animation-delay: 2.6s; }
+    .chispa:nth-of-type(5) { top: 80%; right: 14%; animation-delay: .7s; width: 8px; height: 8px; }
+    @keyframes brillar {
+      0%, 100% { opacity: 0; transform: scale(.5) rotate(0); }
+      50%      { opacity: .9; transform: scale(1.2) rotate(45deg); }
+    }
+
+    main {
+      width: 100%;
+      max-width: 480px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    /* ---------- Perfil ---------- */
+    .perfil { text-align: center; }
+
+    .avatar {
+      width: 128px; height: 128px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, var(--oro), var(--naranja), #6b3d08);
+      box-shadow: 0 0 40px -6px rgba(245, 176, 65, 0.55);
+      animation: respirar 4s ease-in-out infinite;
+    }
+    .avatar img {
+      width: 100%; height: 100%;
+      border-radius: 50%;
+      display: block;
+      object-fit: cover;
+      border: 3px solid var(--bg);
+    }
+    @keyframes respirar {
+      50% { box-shadow: 0 0 60px -4px rgba(245, 176, 65, 0.75); }
+    }
+
+    h1 {
+      font-family: "Permanent Marker", cursive;   /* estilo graffiti como tu logo */
+      font-weight: 400;
+      font-size: clamp(2.2rem, 10vw, 3rem);
+      letter-spacing: 2px;
+      line-height: 1;
+      color: #fff;
+      text-shadow: 0 0 24px rgba(245, 176, 65, 0.45), 3px 3px 0 #000;
+    }
+    h1 .estrella { color: var(--oro); font-size: .45em; vertical-align: super; }
+
+    .bio { color: var(--muted); margin-top: 10px; font-size: 1rem; }
+
+    /* ---------- Secciones ---------- */
+    .titulo-seccion {
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--acento, var(--oro));
+      margin: 0 0 12px 4px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .titulo-seccion::after {
+      content: ""; flex: 1; height: 1px;
+      background: linear-gradient(90deg, var(--acento, var(--oro)), transparent);
+      opacity: .4;
+    }
+    .comunidad { --acento: var(--morado); }
+
+    .links { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+
+    /* ---------- Botones ---------- */
+    .btn {
+      --brand: var(--oro);               /* cada botón sobrescribe su color */
+      display: flex; align-items: center; gap: 14px;
+      padding: 12px 16px 12px 12px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      color: var(--text);
+      text-decoration: none;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: transform .2s ease, background .2s ease, border-color .2s ease, box-shadow .2s ease;
+      opacity: 0;
+      animation: aparecer .5s ease forwards;
+    }
+    .btn:hover, .btn:focus-visible {
+      transform: translateY(-3px);
+      background: var(--card-hover);
+      border-color: var(--brand);
+      box-shadow: 0 10px 30px -10px var(--brand);
+      outline: none;
+    }
+    .btn:active { transform: translateY(-1px) scale(0.99); }
+
+    .icono {
+      flex-shrink: 0;
+      width: 46px; height: 46px;
+      border-radius: 12px;
+      display: grid; place-items: center;
+      background: var(--brand);
+      overflow: hidden;
+    }
+    .icono svg { width: 24px; height: 24px; fill: #fff; }
+    .icono img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    .texto { flex: 1; min-width: 0; }
+    .texto strong { display: block; font-size: 1.05rem; font-weight: 600; }
+    .texto small  { display: block; font-size: 0.85rem; color: var(--muted); margin-top: 1px; }
+
+    .flecha { flex-shrink: 0; width: 20px; height: 20px; fill: var(--muted); transition: transform .2s, fill .2s; }
+    .btn:hover .flecha { transform: translateX(4px); fill: var(--text); }
+
+    /* Colores oficiales de cada plataforma */
+    .youtube { --brand: #ff0033; }
+    .twitch  { --brand: #9146ff; }
+    .kick    { --brand: #53fc18; }
+    .kick .icono svg { fill: #000; }
+    .tiktok  { --brand: #fe2c55; }
+    .tiktok .icono { background: linear-gradient(135deg, #25f4ee, #fe2c55); }
+    .discord { --brand: #5865f2; }
+    .taro    { --brand: var(--magenta); }
+    .taro .icono { background: #1a0626; padding: 6px; }
+    .taro .icono img { object-fit: contain; }
+
+    /* ---------- Tarjeta destacada: Funky Punky MC ---------- */
+    .btn.fpmc {
+      --brand: var(--morado);
+      padding: 14px 16px 14px 14px;
+      background:
+        radial-gradient(circle at 0% 50%, rgba(180, 74, 232, 0.35), transparent 60%),
+        linear-gradient(135deg, rgba(45, 5, 86, 0.75), rgba(9, 4, 26, 0.75));
+      border-color: rgba(180, 74, 232, 0.5);
+      box-shadow: 0 0 30px -12px var(--morado);
+    }
+    .btn.fpmc .icono {
+      width: 72px; height: 72px;
+      border-radius: 50%;
+      background: none;
+      box-shadow: 0 0 0 2px var(--morado), 0 0 22px -2px var(--magenta);
+    }
+    .btn.fpmc strong { font-size: 1.15rem; }
+    .btn.fpmc small  { color: #d8c2ec; }
+    .tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; }
+    .tags span {
+      font-size: 0.65rem; font-weight: 800; letter-spacing: .5px;
+      padding: 2px 8px;
+      border-radius: 99px;
+      background: rgba(180, 74, 232, 0.25);
+      border: 1px solid rgba(214, 106, 233, 0.45);
+      color: #f1d9ff;
+    }
+
+    /* Aparición escalonada */
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .links li:nth-child(1) .btn { animation-delay: .05s; }
+    .links li:nth-child(2) .btn { animation-delay: .12s; }
+    .links li:nth-child(3) .btn { animation-delay: .19s; }
+    .links li:nth-child(4) .btn { animation-delay: .26s; }
+
+    footer { color: var(--muted); opacity: .7; font-size: 0.8rem; text-align: center; }
+
+    /* Respeta a quien desactiva animaciones en su sistema */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .btn { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hex-bg" aria-hidden="true"></div>
+  <i class="chispa" aria-hidden="true"></i>
+  <i class="chispa" aria-hidden="true"></i>
+  <i class="chispa" aria-hidden="true"></i>
+  <i class="chispa" aria-hidden="true"></i>
+
+  <main>
+    <!-- ===== PERFIL ===== -->
+    <header class="perfil">
+      <div class="avatar">
+        <img src="img/avatar.jpg" alt="Logo de SAULPLAY112" width="128" height="128" />
+      </div>
+      <h1>SAULPLAY112<span class="estrella">✦</span></h1>
+      <p class="bio">🎮 Streams, videos y pura diversión</p>
+    </header>
+
+    <!-- ===== REDES ===== -->
+    <section aria-labelledby="t-redes">
+      <h2 class="titulo-seccion" id="t-redes">Mis redes</h2>
+      <ul class="links">
+        <li>
+          <a class="btn youtube" href="https://www.youtube.com/@SAULPLAY112" target="_blank" rel="noopener noreferrer">
+            <span class="icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></span>
+            <span class="texto"><strong>YouTube</strong><small>Videos y directos</small></span>
+            <svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6-1.4-1.4L12.2 12 7.6 7.4z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="btn twitch" href="https://www.twitch.tv/saulplay112" target="_blank" rel="noopener noreferrer">
+            <span class="icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.3 0 1 4.3v15.4h5.1V24h3l4.3-4.3h4L24 13.1V0H4.3zm17.4 12-3.4 3.4h-5.2l-3 3v-3H5.7V2.3h16V12zM18.3 6.2v5.1H16V6.2h2.3zm-6 0v5.1H10V6.2h2.3z"/></svg></span>
+            <span class="texto"><strong>Twitch</strong><small>Streams en vivo</small></span>
+            <svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6-1.4-1.4L12.2 12 7.6 7.4z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="btn kick" href="https://kick.com/saulplay112" target="_blank" rel="noopener noreferrer">
+            <span class="icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 2h6v5h2V5h2V3h2V2h6v6h-2v2h-2v2h2v2h2v2h2v6h-6v-1h-2v-2h-2v-2h-2v5H3V2z"/></svg></span>
+            <span class="texto"><strong>Kick</strong><small>Streams en vivo</small></span>
+            <svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6-1.4-1.4L12.2 12 7.6 7.4z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="btn tiktok" href="https://www.tiktok.com/@saulplay112" target="_blank" rel="noopener noreferrer">
+            <span class="icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 6.7a4.8 4.8 0 0 1-3.8-4.2V2h-3.4v13.6a2.9 2.9 0 1 1-2-2.7V9.4a6.3 6.3 0 1 0 5.4 6.2V8.7a8.2 8.2 0 0 0 4.8 1.5V6.8l-1-.1z"/></svg></span>
+            <span class="texto"><strong>TikTok</strong><small>Clips y momentos</small></span>
+            <svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6-1.4-1.4L12.2 12 7.6 7.4z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== COMUNIDAD ===== -->
+    <section class="comunidad" aria-labelledby="t-comunidad">
+      <h2 class="titulo-seccion" id="t-comunidad">Comunidad</h2>
+      <ul class="links">
+        <li>
+          <a class="btn fpmc" href="https://discord.com/invite/xTvJvncTq" target="_blank" rel="noopener noreferrer">
+            <span class="icono"><img src="img/fpmc.webp" alt="" width="72" height="72" loading="lazy" /></span>
+            <span class="texto">
+              <strong>Funky Punky MC</strong>
+              <small>Server de Minecraft</small>
+              <span class="tags"><span>CROSSPLAY</span><span>ECONOMÍA</span><span>TRIALS</span><span>DIVERSIÓN</span></span>
+            </span>
+            <svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6-1.4-1.4L12.2 12 7.6 7.4z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="btn discord" href="https://discord.gg/YjRXUzEUkm" target="_blank" rel="noopener noreferrer">
+            <span class="icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.3 4.4A19.8 19.8 0 0 0 15.4 3l-.6 1.3a18.4 18.4 0 0 0-5.5 0L8.6 3a19.7 19.7 0 0 0-4.9 1.5C.6 9.1-.3 13.7.1 18.2a20 20 0 0 0 6 3l1.3-2a12.9 12.9 0 0 1-2-1l.5-.4a14.2 14.2 0 0 0 12.2 0l.5.4-2 1 1.3 2a19.9 19.9 0 0 0 6-3c.5-5.2-.8-9.8-3.6-13.8zM8 15.4c-1.2 0-2.2-1.1-2.2-2.4S6.8 10.6 8 10.6s2.2 1.1 2.2 2.4-1 2.4-2.2 2.4zm8 0c-1.2 0-2.2-1.1-2.2-2.4s1-2.4 2.2-2.4 2.2 1.1 2.2 2.4-1 2.4-2.2 2.4z"/></svg></span>
+            <span class="texto"><strong>Funky Punky Crew</strong><small>Para los que solo quieren conocer gente</small></span>
+            <svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6-1.4-1.4L12.2 12 7.6 7.4z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="btn taro" href="https://billing.tarohosting.com/aff.php?aff=401" target="_blank" rel="noopener noreferrer sponsored">
+            <span class="icono"><img src="img/taro.webp" alt="" width="46" height="46" loading="lazy" /></span>
+            <span class="texto"><strong>Taro Hosting</strong><small>El hosting que uso para mis servers</small></span>
+            <svg class="flecha" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6-1.4-1.4L12.2 12 7.6 7.4z"/></svg>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <footer>© <span id="year"></span> SAULPLAY112</footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
